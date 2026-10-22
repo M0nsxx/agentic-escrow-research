@@ -25,6 +25,7 @@ Research notes do **not** establish a production commitment, approved API, smart
 | [Verification and evidence envelope - 2026-09-21](verification-and-evidence-envelope-2026-09-21.md) | RFC 0001, RFC 0004 | Reference scaffold for evidence, verifier identity, attestation, and release reasoning |
 | [Agent-facing interface recovery semantics - 2026-09-21](agent-facing-interface-recovery-semantics-2026-09-21.md) | RFC 0004 | Reference scaffold for transaction state, read-model state, retry safety, dependency state, and next valid actions |
 | [Open Stellar agentic payment evidence - 2026-09-21](open-stellar-agentic-payment-evidence-2026-09-21.md) | RFC 0002, RFC 0003, RFC 0004, verification note, use-case library | Adjacent implementation evidence for Stellar x402 skill payments, ZK spend-cap authorization, direct-payment vs escrow boundaries, and evaluator-assisted release reasoning |
+| [Pre-sign policy hook: decision states and fail-closed signing - 2026-10-21](pre-sign-policy-hook-2026-10-21.md) | RFC 0002, RFC 0004, authority note, recovery-semantics note | Implementation and test evidence for policy-constrained signing on an x402 client: outcome vocabulary, approval bound to the exact authorization, and the limits an agent-side check cannot cover |
 
 ### Provenance note
 
