@@ -25,6 +25,7 @@ Research notes do **not** establish a production commitment, approved API, smart
 | [Verification and evidence envelope - 2026-09-21](verification-and-evidence-envelope-2026-09-21.md) | RFC 0001, RFC 0004 | Reference scaffold for evidence, verifier identity, attestation, and release reasoning |
 | [Agent-facing interface recovery semantics - 2026-09-21](agent-facing-interface-recovery-semantics-2026-09-21.md) | RFC 0004 | Reference scaffold for transaction state, read-model state, retry safety, dependency state, and next valid actions |
 | [Open Stellar agentic payment evidence - 2026-09-21](open-stellar-agentic-payment-evidence-2026-09-21.md) | RFC 0002, RFC 0003, RFC 0004, verification note, use-case library | Adjacent implementation evidence for Stellar x402 skill payments, ZK spend-cap authorization, direct-payment vs escrow boundaries, and evaluator-assisted release reasoning |
+| [x402 and MPP Charge on one endpoint: testnet settlements compared - 2026-10-21](x402-vs-mpp-charge-testnet-2026-10-21.md) | RFC 0003, RFC 0004, payment-rail note, recovery-semantics note | Settled testnet evidence for x402 and MPP Charge (pull and push) on the same endpoint; who submits, who pays the fee, and a push-mode payment that settled with no delivery |
 
 ### Provenance note
 
