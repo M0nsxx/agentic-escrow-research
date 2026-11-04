@@ -27,6 +27,7 @@ Research notes do **not** establish a production commitment, approved API, smart
 | [Open Stellar agentic payment evidence - 2026-09-21](open-stellar-agentic-payment-evidence-2026-09-21.md) | RFC 0002, RFC 0003, RFC 0004, verification note, use-case library | Adjacent implementation evidence for Stellar x402 skill payments, ZK spend-cap authorization, direct-payment vs escrow boundaries, and evaluator-assisted release reasoning |
 | [Fail-closed payment and delivery gates - 2026-10-05](fail-closed-payment-and-delivery-gates-2026-10-05.md) | RFC 0002, RFC 0004, recovery semantics note | Two fixed production failure modes where a payment gate and a delivery step defaulted to allow on internal error |
 | [Evidence-gated milestone release: a testnet pilot - 2026-10-14](evidence-gated-release-testnet-pilot-2026-10-14.md) | RFC 0001, RFC 0002, RFC 0004, verification note | One automated approver that checks anchored evidence (hash, milestone binding, provider signature) before approve and release on a Multi-Release escrow, with on-chain transactions, refusal cases and limits |
+| ["Enabled" is not activity: liveness evidence for an autonomous signer - 2026-10-21](enabled-is-not-activity-2026-10-21.md) | RFC 0004, recovery-semantics note, authority note, treasury use case | Mainnet evidence that a status flag meaning "allowlisted" read as activity; separates permission, signer liveness and last confirmed action |
 
 ### Provenance note
 
