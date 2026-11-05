@@ -15,7 +15,7 @@ The comparison that matters for escrow research is not speed or price. It is **w
 | Kind | What | Status |
 | --- | --- | --- |
 | Testnet, on-chain | 5 MPP Charge settlements (2026-10-15) and 2 x402 settlements (2026-10-21) to the same receiving account | Public, re-checked on Horizon testnet 2026-10-21 |
-| Testnet, historical | One push-mode payment that settled with no delivery (2026-09-29) | Observed; only the transaction hash prefix was kept |
+| Testnet, historical | One push-mode payment that settled with no delivery (2026-09-29) | **Unverifiable from this note**: only a hash prefix was kept, so it cannot be re-checked on-chain |
 | Mainnet | x402 settles on mainnet. MPP Charge has **never** settled a payment on mainnet | Stated plainly; MPP mainnet is untested |
 | Payers | All payments came from the team's own throwaway testnet keys | Internal tests, not usage |
 
@@ -54,7 +54,7 @@ MPP here ran without a fee sponsor, so the payer's account is the source and pay
 
 ## The Failure Mode That Matters for Escrow
 
-On 2026-09-29, before the setup above worked, a **push-mode** payment on the same testnet endpoint was confirmed on-chain and the server still answered with a verification failure: the payer paid and received nothing (transaction prefix `41f12900ac27…`; the full hash was not kept). The root cause was not determined at the time. By 2026-10-15 the same endpoint verified and delivered in both modes, as the table shows.
+On 2026-09-29, before the setup above worked, a **push-mode** payment on the same testnet endpoint was reported as confirmed on-chain while the server still answered with a verification failure: the payer paid and received nothing. **That claim is unverifiable from this note**: only the hash prefix `41f12900ac27…` was kept, so the transaction cannot be re-checked on-chain, and the root cause was not determined at the time. By 2026-10-15 the same endpoint verified and delivered in both modes, as the table shows.
 
 That is the shape of the problem escrow exists for. In push mode the payer moves the money first and asks for the goods second. If the server's verification fails, the transfer is already final and nothing on-chain links it to an undelivered request. In pull mode, and in x402, the server verifies first and only then submits, so a failed verification leaves the payer uncharged. Delivery can still fail after the server submits, but then the failure sits on the server's side of the line, after it chose to take the money.
 
