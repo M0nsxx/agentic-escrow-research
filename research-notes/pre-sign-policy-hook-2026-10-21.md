@@ -76,6 +76,7 @@ These limits are stated in the SDK README and in #96. Neither is solved:
 | [Authority, intent, and delegation](authority-intent-and-delegation-2026-09-21.md) | A concrete case of "policy-constrained signing". Matches the principle "make unauthorized economic actions inexpressible": `CONTEXT_MISMATCH` refuses anything but the one expected transfer |
 | [Agent-facing interface recovery semantics](agent-facing-interface-recovery-semantics-2026-09-21.md) | The outcome table is one real vocabulary for retryable, terminal and dependency failures, at the signing step |
 | [RFC 0002](../rfcs/0002-agent-authority-levels.md) | Sits between Level 1 (human signs) and full autonomy: the agent signs, but only after a policy that can say `WAIT` |
+| [Fail-closed payment and delivery gates](fail-closed-payment-and-delivery-gates-2026-10-05.md) | Same fail-closed stance: every non-ALLOW outcome signs nothing, so an internal error or missing answer cannot become a payment |
 | [Nirium direct x402 payment](../use-cases/nirium-direct-x402-payment.md) | The same payment flow, with a policy step before the signature |
 
 ## Open Questions
